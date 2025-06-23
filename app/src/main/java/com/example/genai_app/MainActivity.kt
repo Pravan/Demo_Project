@@ -1,5 +1,6 @@
 package com.example.genai_app
 
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,6 +13,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.genai_app.ui.theme.Genai_appTheme
+import android.util.Log
+import androidx.compose.foundation.layout.Column
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,15 +23,23 @@ class MainActivity : ComponentActivity() {
         setContent {
             Genai_appTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Column {
+                        Greeting(
+                            name = "Android",
+                            modifier = Modifier.padding(innerPadding)
+
+                        )
+                        Greeting(
+                            name = "IOS",
+                            modifier = Modifier.padding(innerPadding)
+                        )
+                    }
                 }
             }
         }
     }
 }
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -45,3 +56,4 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
