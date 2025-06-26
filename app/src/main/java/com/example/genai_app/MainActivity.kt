@@ -13,8 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.genai_app.ui.theme.Genai_appTheme
-import android.util.Log
-import androidx.compose.foundation.layout.Coluimpo
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Genai_appTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Column {
+
                         Greeting(
                             name = "Android",
                             modifier = Modifier.padding(innerPadding)
