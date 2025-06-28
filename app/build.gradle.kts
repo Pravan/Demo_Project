@@ -1,26 +1,20 @@
-
+import com.android.build.gradle.LibraryExtension
 
 plugins {
-
-id("com.android.application")
-id("org.jetbrains.kotlin.android")
-id("com.google.gms.google-services")
-id("kotlin-kapt")
-id("kotlin-parcelize")
-id("androidx.navigation.safeargs.kotlin")
-
-
-
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.example.genai_app"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.genai_app"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -65,8 +59,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-
-
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    implementation("com.google.firebase:firebase-analytics")
 
 }
