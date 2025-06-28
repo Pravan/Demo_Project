@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1005265175994",
+    "project_id": "mychatapp-9fe88",
+    "storage_bucket": "mychatapp-9fe88.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005265175994:android:789e78f3bf210417c20983",
+        "android_client_info": {
+          "package_name": "com.example.genai_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXybgHmPPfoZRCOCPPtH9zYjmiukHRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
